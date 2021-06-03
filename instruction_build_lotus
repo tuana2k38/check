@@ -1,0 +1,19 @@
+docker pull msh-gitlabregistry.sohatv.vn/tdesktop:latest
+
+cd /opt
+git clone --recursive https://msh-git.sohatv.vn/thainv/lotuspc_plus.git ldesktop
+chmod -R 777 ldesktop
+sudo docker run -it --mount type=bind,source=/opt/ldesktop,target=/opt/ldesktop b502926ed250  bash
+
+setup QTAV
+
+Building the project
+
+Go to BuildPath/ldesktop/Lotus and run (using your api_id and api_hash)
+./configure.sh -D LDESKTOP_API_ID=YOUR_API_ID -D LDESKTOP_API_HASH=YOUR_API_HASH -D DESKTOP_APP_USE_PACKAGED=OFF -D DESKTOP_APP_DISABLE_CRASH_REPORTS=OFF
+
+To make Debug version go to BuildPath/ldesktop/out/Debug and run
+make $MAKE_THREADS_CNT
+
+To make Release version go to BuildPath/ldesktop/out/Release and run
+make $MAKE_THREADS_CNT
