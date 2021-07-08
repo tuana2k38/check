@@ -14,6 +14,7 @@ Go to BuildPath/ldesktop/Lotus and run (using your api_id and api_hash)
 
 To make Debug version go to BuildPath/ldesktop/out/Debug and run
 make $MAKE_THREADS_CNT
+dfdfdf
 
 To make Release version go to BuildPath/ldesktop/out/Release and run
 make $MAKE_THREADS_CNT
