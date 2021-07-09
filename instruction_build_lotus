@@ -18,3 +18,4 @@ dfdfdf
 
 To make Release version go to BuildPath/ldesktop/out/Release and run
 make $MAKE_THREADS_CNT
+dadas
